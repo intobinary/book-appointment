@@ -1,7 +1,7 @@
 
 /*===
 intobinary (www.intobinary.co)
-&copy Coryright 2017 IntoBinary. All rights reserved.
+&copy Coryright 2022 IntoBinary. All rights reserved.
 Written for -- www.book-appointment.intobinary.org
 ===*/
 
@@ -938,7 +938,7 @@ var chat = new Chat({
 		"Hello, world!",
 		"I'm Madam Ella, software engineer and feminist.",
 		"I'm the sole soul behind Into Binary.",
-		"What can I do for you?", {
+		"What can I do for you? :)", {
 			type: "choose",
 			answers: [{
 				"text": "Can we meet?",
