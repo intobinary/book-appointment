@@ -819,7 +819,6 @@ intobinary(document).ready(function() {
 
 					return; break;
 				case 7:
-					if(thisBubbleText == "Next week" || thisBubbleText == "How about next week?") {
 						requestedDate = "Next week";
 						processEmailText += "\n- Date: " + requestedDate;
 					}
@@ -937,7 +936,7 @@ var chat = new Chat({
 	greeting: [
 		"Hello, world!",
 		"I'm Madam Ella, software engineer and feminist.",
-		"I'm the sole soul behind Into Binary.",
+		"I am the founder of Into Binary.",
 		"What can I do for you? :)", {
 			type: "choose",
 			answers: [{
@@ -958,10 +957,10 @@ var chat = new Chat({
 		"But, please, take the time to consider email. Are you sure we will be not able to discuss this properly via email? I typically reply within one business day.", {
 			type: "choose",
 			answers: [{
-				"text": "Yes. I'm certain.",
+				"text": "Yes. Meeting up is best.",
 				"path": "meetup"
 			}, {
-				"text": "Uhmm.. nevermind. Email is fine.",
+				"text": "Sure! Email would do!",
 				"path": "what-else"
 			}, {
 				"text": "Are you always so serious?",
@@ -971,7 +970,7 @@ var chat = new Chat({
 	],
 	
 	"done": [
-		"Well, I think we're done here?", {
+		"Well, I think I've answered it all?", {
 			type: "choose",
 			answers: [{
 				"text": "I agree",
@@ -985,7 +984,7 @@ var chat = new Chat({
 	
 	"email-me": [
 		"Sure.",
-		"You can email me directly at <a href='mailto:madam.ella@corporomalala.com'>madam [dot] ella [at] corporomalala [dot] com</a>. The tech world is filled with buzzwords. But I talk \"jargon-free\".", {
+		"You can email me directly at <a href='mailto:madam.ella@intbinary.org'>madam [dot] ella [at] intobinary [dot] org</a>. The tech world is filled with buzzwords. But I prefer conversations without jargon. I'm sure you and I will have a pleasant talk. :)", {
 			type: "choose",
 			answers: [{
 				"text": "Ok. Thanks.",
@@ -1070,7 +1069,7 @@ var chat = new Chat({
 	"meetup": [
 		"Okay, then.",
 		"I am currently in Johannesburg.",
-		"Fun fact, Johannesburg has been rebuilt four times. Within one century, it has been transformed from a tented camp, a tin shanty town, four-storey Edwardian brick buildings and now, a city of modern skyscrapers. :D",
+		"Fun fact, Johannesburg is South Africa's largest city. It's also the second largest on the continent, behind the Egyptian city of Cairo.",
 		"Let's talk over coffee?", {
 			type: "choose",
 			answers: [{
@@ -1080,7 +1079,7 @@ var chat = new Chat({
 				"text": "Any other means of contact?",
 				"path": "email-me"
 			}, {
-				"text": "Uhmm.. nevermind.",
+				"text": "Uhmm.. I changed my mind.",
 				"path": "tell-a-joke"
 			}]
 		}
@@ -1088,8 +1087,8 @@ var chat = new Chat({
 	
 	"say-goodbye": [
 		"Alright",
-		"It was nice, chatting with you. Remember, you can always contact me with any question, via any means (social media or other).",
-		"Bye Bye."
+		"It was nice, chatting with you. Remember, you can always contact me with any question, via any means (social media and others).",
+		"Have a lovely week ahead."
 	],
 	
 	"share-this": [
@@ -1098,12 +1097,15 @@ var chat = new Chat({
 		"Would you, please, share it around.. so that others can enjoy it aswell?",
 		"<a target='_blank' href='https://facebook.com/share.php?u=http%3A%2F%2Fbook-appointment.intobinary.org%2F&title=Coffee%20with%20Madam%20Ella'>Share on Facebook</a> <a target='_blank' href='https://twitter.com/intent/tweet?text=Type%20in%20your%20tweet&url=https%3A%2F%2Fbook-appointment.intobinary.org%2F&via=intobinary&related=madamellamalala%3AFounder%20and%20lead%20developer&hashtags=ConversationalUI,ChatBot,AI,MadeWithLoveInKinshasa'>Share on Twitter</a>",
 		"It was nice, chatting with you",
-		"Bye Bye."
+		"Have a lovely week ahead."
 	],
 	
 	"tell-a-joke": [
 		"How about a little joke? I always try to keep things casual to some extent. Laughter makes work more fun and transforms any project into a passion rather than a task.",
 		"How many programmers does it take to change a light bulb?",
+		"...",
+		"...",
+		"...",
 		"None. It's a hardware problem.",
 		"Bazinga!", {
 			type: "choose",
@@ -1127,7 +1129,7 @@ var chat = new Chat({
 	
 	"user-account": [
 		"Cool.",
-		"May I have your Twitter handle? It's okay, if you don't have one. Mine is: <a target='_blank' href='https://twitter.com/ellemalala'>@ElleMalala</a>, by the way. :)", {
+		"May I have your Instagram handle? It's okay, if you don't have one. Mine is: <a target='_blank' href='https://instagram.com/MadamEllaMalala'>@MadamEllaMalala</a>, by the way. :)", {
 			type: "write",
 			path: "user-subject"
 		}
@@ -1180,7 +1182,7 @@ var chat = new Chat({
 	
 	"user-timeframe": [
 		"Okie dokie...",
-		"Now it's your turn to talk about you.",
+		"Now it's your turn to tell me a little about you.",
 		"What's your name?", {
 			type: "write",
 			path: "user-about"
@@ -1207,7 +1209,7 @@ var chat = new Chat({
 	],
 	
 	"what-is-this": [
-		"Oh, I'm assuming you did not reach this page from Into Binary's facebook page?",
+		"Oh, I'm assuming you did not reach this page from Into Binary's website?",
 		"This chat bot was built specifically for people who are interested in Into Binary and want to get in touch with me.",
 		"Speaking of which, follow our Facebook page: <a href='https://facebook.com/IntoBinary'>@IntoBinary</a>.", {
 			type: "choose",
@@ -1225,7 +1227,7 @@ var chat = new Chat({
 	],
 	
 	"what-is-into-binary": [
-		"Well, Into Binary is informal tech charity.",
+		"Well, Into Binary is a tech charity.",
 		"I deeply believe the 4th Industrial Revolution is Africa's moment to leapfrog. Into Binary is where I get to give back using the skills and tools of my profession.",
 		"Would you like to know more?", {
 			type: "choose",
@@ -1240,9 +1242,9 @@ var chat = new Chat({
 	],
 	
 	"what-is-into-binary-more": [
-		"Started this 2021, Into Binary is barely in its seeds stage.",
+		"Started this 2021, Into Binary is in its seeds stage.",
 		"I studied Information Technology in India. And have since grown a taste for tech beyond mere outputs of code. I longed to put new products into the world that solved real needs. And so, Into Binary was born.",
-		"Software is eating the world and disrupting business of all kinds. I believe, it's not about 'apps' but rather how technology can open up new possibilities and make things and people smarter, faster and more streamlined. Into Binary, is my vessel to dream up, validate, and ultimately build those ideas -- in partnership with other charities.", {
+		"Software is eating the world and disrupting business of all kinds. I believe, it's not about 'apps' but rather how technology can open up new possibilities and make things and people smarter, faster and more streamlined. Into Binary, is my vessel to dream up, validate, and ultimately build those ideas.", {
 			type: "choose",
 			answers: [{
 				"text": "Very interesting",
