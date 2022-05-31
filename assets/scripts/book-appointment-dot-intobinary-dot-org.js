@@ -778,6 +778,8 @@ intobinary(document).ready(function() {
 			thisBubbleText = intobinary(this).text().trim();
 			/* sanitize bubbleText */
 			
+			/* TO EDIT! TO EDIT! TO EDIT! */
+			/*
 			switch(i){
 				case 0:
 						return; break;
@@ -832,6 +834,7 @@ intobinary(document).ready(function() {
 
 					return false; break;
 			}
+			*/
 		});
 			
 		/* check if email in blacklist */
